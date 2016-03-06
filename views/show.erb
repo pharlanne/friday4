@@ -1,0 +1,23 @@
+<div class="show">
+
+<label for="title">Title :</label>
+<p><%= @bookmark.title%></p>
+
+<label for="category">Category:</label>
+<p><%= @bookmark.category %></p>
+
+<label for="url">url:</label>
+<p><%= @bookmark.url %></p>
+
+<div class="edit">
+  <a href="/bookmark/<%= @bookmark.id %>/edit">Edit Bookmark</a>
+  </div>
+  
+
+  <form action="/bookmark/<%= @bookmark.id %>/delete" method="post">
+    <input type="submit" value="Delete">
+  </form>
+
+
+<hr>
+</div>

@@ -1,0 +1,34 @@
+<div class="edit">
+<h2>Edit Bookmark</h2>
+
+
+<form action="/bookmark/<%= @bookmark.id %>" method="post">
+  
+  <!-- <label>URL</label> -->
+  <input type="text" name="url" value="<%= @bookmark.url%>"> 
+  <!-- <label>Title</label>    -->      
+  <input type="text" name="title" value="<%= @bookmark.title %>"> 
+
+  <select name="category">
+    <option value="Social Networks">Social Networks</option>
+    <option value"News">News</option>
+    <option value"Finances">Finances</option>
+    <option value"Shopping">Shopping</option>
+    <option value"Travel">Travel</option>
+    <option value"Sports">Sports</option>
+    <option value"Education">Education</option>
+    <option value"Music">Music</option>
+    <option value"Videos">Videos</option>
+    <option value"TV">Tv</option>
+    <option value"Movies">Movies</option>
+    <option value"Podcast">Podcast</option>
+    <option value"Games">Games</option>
+    <option value"Others">Others</option>
+  </select>
+
+
+  <input type="submit" value="Update">
+
+
+</form>
+</div>

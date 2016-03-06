@@ -1,0 +1,13 @@
+<h2>All Bookmarks</h2>
+<% @bookmarks.each do |bookmark| %>
+
+<div class="all">
+<label for="title">Title:</label><p><%= bookmark.title %></p><label for="url">URL: </label>
+<p><%= bookmark.url %></p><label for="category">Category</label>
+<p><%= bookmark.category %></p>
+
+<a href="/bookmark/<%= bookmark.id %>">Edit Bookmark</a>
+
+<hr>
+</div>
+<% end %>
